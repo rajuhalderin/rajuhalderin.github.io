@@ -7,6 +7,7 @@ import icon from '../app/favicon.ico'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: 'Raju Halder - Portfolio',
   description: 'Experienced Android, Windows, and Web App Developer | Enhancing User Experience through Innovative Solutions | Skilled in Crafting High-Performance Applications | Portfolio Showcasing Diverse Development Projects | Expertise in Android, Windows, and Web App Development for Seamless User Engagement | Elevate Your Digital Presence with Tailored Solutions from a Versatile Developer.',
   generator: 'Raju Halder',
@@ -54,9 +55,6 @@ export const metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  icons:{
-    icon:icon,
   },
   verification: {
     google: 'google',
