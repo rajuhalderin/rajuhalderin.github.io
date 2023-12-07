@@ -7,7 +7,7 @@ import icon from '../app/favicon.ico'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  metadataBase: new URL('https://raju.betadebug.com'),
+  metadataBase: new URL('https://rajuhalder-2xbv5ijlw-raju-halders-projects.vercel.app'),
   title: {
     default: 'Raju Halder - Portfolio',
     template: '%s | Raju Halder'
