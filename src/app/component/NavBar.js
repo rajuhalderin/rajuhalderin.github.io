@@ -48,7 +48,7 @@ const NavBar = () => {
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between relative dark:text-light dark:bg-dark dark:border-transparent z-10 lg:px-16 md:px-12 sm:px-8'>
 
-            <button className='lg:flex flex-col justify-center items-center hidden' onClick={handleClick}>
+            <button aria-label='Menu' className='lg:flex flex-col justify-center items-center hidden' onClick={handleClick}>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}></span>
@@ -63,29 +63,29 @@ const NavBar = () => {
                     <CustomLink href="/articles" title="Articles" className='ml-4' /> */}
                 </nav>
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <motion.a href="https://www.facebook.com/dev.rajuhalder" target='_blank'
+                    <motion.a href="https://www.facebook.com/dev.rajuhalder" aria-label='Facebook Icon for social media profile' target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-8 ml-3'>
                         <FacebookIcon />
                     </motion.a>
-                    <motion.a href="https://www.instagram.com/dev_rajuhalder" target='_blank'
+                    <motion.a href="https://www.instagram.com/dev_rajuhalder" aria-label='Instagram Icon for social media profile' target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-8 mx-3'>
                         <InstagramIcon />
                     </motion.a>
-                    <motion.a href="https://twitter.com/dev_rajuhalder" target='_blank'
+                    <motion.a href="https://twitter.com/dev_rajuhalder" aria-label='Twitter Icon for social media profile' target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-8 mr-3'>
                         <TwitterIcon /></motion.a>
-                    <motion.a href="https://www.linkedin.com/in/dev-rajuhalder/" target='_blank'
+                    <motion.a href="https://www.linkedin.com/in/dev-rajuhalder/" aria-label='Linkedin Icon for social media profile' target='_blank'
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className='w-8 mr-3'>
                         <LinkedInIcon /></motion.a>
-                    <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>{
+                    <button aria-label='Light mode and dark mode button' onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>{
                         mode === "dark" ? <SunIcon className={"fill-dark"} /> :
                             <MoonIcon className={"fill-dark"} />
                     }</button>
@@ -105,29 +105,29 @@ const NavBar = () => {
                             <CustomMobileLink href="/articles" title="Articals" toggle={handleClick} /> */}
                         </nav>
                         <nav className='flex items-center justify-center flex-wrap mt-2'>
-                            <motion.a href="https://www.facebook.com/dev.rajuhalder" target='_blank'
+                            <motion.a href="https://www.facebook.com/dev.rajuhalder" aria-label='Facebook Icon for social media profile' target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className='w-6 mr-2 sm:mx-1'>
                                 <FacebookIcon />
                             </motion.a>
-                            <motion.a href="https://www.instagram.com/dev_rajuhalder" target='_blank'
+                            <motion.a href="https://www.instagram.com/dev_rajuhalder" aria-label='Instagram Icon for social media profile' target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className='w-6 mx-2 sm:mx-1'>
                                 <InstagramIcon />
                             </motion.a>
-                            <motion.a href="https://twitter.com/dev_rajuhalder" target='_blank'
+                            <motion.a href="https://twitter.com/dev_rajuhalder" aria-label='Twitter Icon for social media profile' target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className='w-6 mx-2 sm:mx-1'>
                                 <TwitterIcon /></motion.a>
-                            <motion.a href="https://www.linkedin.com/in/dev-rajuhalder/" target='_blank'
+                            <motion.a href="https://www.linkedin.com/in/dev-rajuhalder/" aria-label='Linkedin Icon for social media profile' target='_blank'
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className='w-6 mx-2 sm:mx-1'>
                                 <LinkedInIcon /></motion.a>
-                            <button onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
+                            <button aria-label='Light mode and dark mode button' onClick={() => setMode(mode === "light" ? "dark" : "light")} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}>
                                 {
                                     mode === "dark" ? <SunIcon className={"fill-dark"} /> : <MoonIcon className={"fill-dark"} />
                                 }
