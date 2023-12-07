@@ -7,8 +7,11 @@ import icon from '../app/favicon.ico'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  metadataBase: new URL('http://localhost:3000'),
-  title: 'Raju Halder - Portfolio',
+  metadataBase: new URL('https://raju.betadebug.com'),
+  title: {
+    default: 'Raju Halder - Portfolio',
+    template: '%s | Raju Halder'
+  },
   description: 'Experienced Android, Windows, and Web App Developer | Enhancing User Experience through Innovative Solutions | Skilled in Crafting High-Performance Applications | Portfolio Showcasing Diverse Development Projects | Expertise in Android, Windows, and Web App Development for Seamless User Engagement | Elevate Your Digital Presence with Tailored Solutions from a Versatile Developer.',
   generator: 'Raju Halder',
   applicationName: 'Raju Halder - Portfolio',
@@ -22,27 +25,27 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  openGraph: {
-    title: 'Raju Halder - Portfolio',
-    description: 'Expertise in Android, Windows, and Web App Development for Seamless User Engagement',
-    url: 'https://raju.betadebug.com',
-    siteName: 'Raju Halder - Portfolio',
-    // images: [
-    //   {
-    //     url: 'https://nextjs.org/og.png',
-    //     width: 800,
-    //     height: 600,
-    //   },
-    //   {
-    //     url: 'https://nextjs.org/og-alt.png',
-    //     width: 1800,
-    //     height: 1600,
-    //     alt: 'My custom alt',
-    //   },
-    // ],
-    locale: 'en_US',
-    type: 'website',
-  },
+  // openGraph: {
+  //   title: 'Raju Halder - Portfolio',
+  //   description: 'Expertise in Android, Windows, and Web App Development for Seamless User Engagement',
+  //   url: 'https://raju.betadebug.com',
+  //   siteName: 'Raju Halder - Portfolio',
+  //   images: [
+  //     {
+  //       url: 'https://nextjs.org/og.png',
+  //       width: 800,
+  //       height: 600,
+  //     },
+  //     {
+  //       url: 'https://nextjs.org/og-alt.png',
+  //       width: 1800,
+  //       height: 1600,
+  //       alt: 'My custom alt',
+  //     },
+  //   ],
+  //   locale: 'en_US',
+  //   type: 'website',
+  // },
   robots: {
     index: true,
     follow: true,
