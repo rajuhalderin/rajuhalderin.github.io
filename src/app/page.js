@@ -12,7 +12,6 @@ export default function Home() {
   const path= usePathname();
   return (
     <main>
-      <TransitionEffect path={path}/>
       <div className='w-full h-full inline-block z-0 px-20 bg-light dark:bg-dark xl:px-20 lg:px-16 md:px-12 sm:px-8 pt-0 md:pt-16 sm:pt-8'>
       <div className="flex items-center text-dark dark:text-light w-full h-full">
         <div className='flex items-center justify-between w-full lg:flex-col'>
