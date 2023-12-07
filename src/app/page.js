@@ -1,11 +1,10 @@
 'use client'
 import Image from 'next/image'
-import profilePic from "../../public/dev-profile-1.png"
+import profilePic from "../../public/dev-main.png"
 import { AnimatedText } from './component/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from './component/Icon'
 import Hireme from './component/Hireme'
-import TransitionEffect from './component/TransitionEffect'
 import { usePathname } from 'next/navigation'
 
 export default function Home() {
