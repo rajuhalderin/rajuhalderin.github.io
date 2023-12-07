@@ -1,7 +1,7 @@
 "use client"
 import { AnimatedText } from '../component/AnimatedText'
 import Image from 'next/image'
-import profileImage from '../../../public/author.png'
+import profileImage from '../../../public/author.jpg'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import { useRef, useEffect } from 'react'
 import Skills from '../component/Skills'
