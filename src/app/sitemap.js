@@ -7,7 +7,7 @@ export default function sitemap() {
         priority: 1,
       },
       {
-        url: 'https://raju.betadebug/about',
+        url: 'https://raju.betadebug.com/about',
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
